@@ -1,0 +1,37 @@
+import math
+import random
+
+# Variables numéricas
+lim_superior = 6
+lim_inferior = 3
+
+# Cadenas fijas de texto
+
+# User input
+
+
+# Cantidades calculadas
+intentos_permitidos = round(math.log(lim_superior - lim_inferior + 1,2))
+numero_secreto = random.randint(lim_inferior,lim_superior)
+
+# Inicio del juego
+bienvenida = "¡Comenzamos el juego!"
+print(bienvenida)
+adivinar = "Tienes 2 intentos para adivinar el número entre 3 y 6."
+print(adivinar)
+
+número1 = input("Primer intento")
+
+
+# Adivinar 1 intento
+intento1 = "Intento 1: " + número1
+print(intento1)
+
+número2 = input("Segundo intento")
+
+intento2 = "Intento 2: " + número2
+print(intento2)
+
+# Fin del juego
+fin_juego = "Terminamos el juego. El número era " + str(numero_secreto) + " ¿lo adivinaste?"
+print(fin_juego)
