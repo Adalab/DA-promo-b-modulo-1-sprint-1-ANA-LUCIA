@@ -82,5 +82,20 @@ INSERT INTO facturas (numero_factura, fecha, id_zapatilla, id_empleado, id_clien
 	VALUES 	(123, '2001-12-11', 1, 2, 1, 54.98),
 			(1234, '2005-05-23', 1, 1, 3, 89.91),
             (12345, '2015-09-18', 2, 3, 3, 76.23);
+            
+UPDATE zapatillas
+	SET color = "Amarillas"
+    WHERE  id_zapatilla = 2;
 
-select * from empleados
+UPDATE empleados
+	SET tienda = "A Coruña"
+    WHERE id_empleado = 1;
+    
+UPDATE clientes
+	SET numero_telefono = "12345678"
+    WHERE id_cliente = 1;
+    
+UPDATE facturas
+	SET total = 89.91
+    WHERE id_factura = 2;
+
