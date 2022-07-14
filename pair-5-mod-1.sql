@@ -44,9 +44,10 @@ SELECT category_name AS nombre_de_categoría
 FROM categories;
 
 -- EJERCICIO 8 --
-SELECT shipped_date  DATE_ADD(day, -5, shipped_date) AS fecha_retrasada
-FROM orders;
-gtom
+
+SELECT order_id, DATE_ADD(shipped_date,INTERVAL -5 day) AS fecha_retrasada
+FROM orders
+ORDER BY order_id;
 
 -- EJERCICIO 9 --
 
