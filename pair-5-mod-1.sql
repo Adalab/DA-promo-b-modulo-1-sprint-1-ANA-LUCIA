@@ -46,6 +46,7 @@ FROM categories;
 -- EJERCICIO 8 --
 SELECT shipped_date  DATE_ADD(day, -5, shipped_date) AS fecha_retrasada
 FROM orders;
+gtom
 
 -- EJERCICIO 9 --
 
